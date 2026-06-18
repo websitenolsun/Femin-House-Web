@@ -26,13 +26,13 @@ import { canonicalLink, pageStructuredData, seoBusiness } from "@/lib/seo";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Fem'n House | Beylikdüzü Fizyoterapi & Klinik Pilates" },
+      { title: "Femin House | Beylikdüzü Fizyoterapi & Klinik Pilates" },
       {
         name: "description",
         content:
-          "Fem'n House Beylikdüzü Centro'da fizyoterapi danışmanlığı, klinik pilates, hamile pilatesi, manuel terapi ve ağrı yönetimi sunar.",
+          "Femin House Beylikdüzü Centro'da fizyoterapi danışmanlığı, klinik pilates, hamile pilatesi, manuel terapi ve ağrı yönetimi sunar.",
       },
-      { property: "og:title", content: "Fem'n House | Fizyoterapi & Pilates" },
+      { property: "og:title", content: "Femin House | Fizyoterapi & Pilates" },
       {
         property: "og:description",
         content:
@@ -42,7 +42,7 @@ export const Route = createFileRoute("/")({
     links: [canonicalLink("/")],
     scripts: pageStructuredData({
       path: "/",
-      name: "Fem'n House",
+      name: "Femin House",
       description: "Beylikduzu Fizyoterapi ve Klinik Pilates Merkezi",
     }),
   }),
@@ -159,8 +159,8 @@ const reviews = [
 ];
 
 const galleryImages = [
-  { src: "/optimized/gallery-01.webp", alt: "Fem'n House stüdyo detayı", width: 791, height: 763 },
-  { src: "/optimized/gallery-02.webp", alt: "Fem'n House klinik alanı", width: 368, height: 368 },
+  { src: "/optimized/gallery-01.webp", alt: "Femin House stüdyo detayı", width: 791, height: 763 },
+  { src: "/optimized/gallery-02.webp", alt: "Femin House klinik alanı", width: 368, height: 368 },
   { src: "/optimized/gallery-03.webp", alt: "Hamile pilatesi dersi", width: 960, height: 1707 },
   { src: "/optimized/gallery-05.webp", alt: "Manuel terapi seansı", width: 960, height: 960 },
   {
@@ -189,7 +189,7 @@ const galleryImages = [
   },
   {
     src: "/optimized/gallery-12.webp",
-    alt: "Fem'n House stüdyo portresi",
+    alt: "Femin House stüdyo portresi",
     width: 368,
     height: 368,
   },
@@ -251,7 +251,7 @@ export function TrainersSection() {
           <div className="relative overflow-hidden rounded-[1.5rem] shadow-[0_30px_80px_-35px_rgba(80,40,20,0.45)]">
             <img
               src={fizyoterapistImg}
-              alt="Fzt. Sena Er, Fem'n House eğitmeni"
+              alt="Fzt. Sena Er, Femin House eğitmeni"
               width={900}
               height={1520}
               loading="lazy"
@@ -279,7 +279,7 @@ export function TrainersSection() {
             Önce bedeni dinleyen, sonra hareketi kişiye göre kuran yaklaşım.
           </SectionTitle>
           <p className="mt-6 max-w-2xl text-base leading-8 text-[oklch(0.39_0.04_35)] sm:text-lg">
-            Fem'n House'ta eğitmen deneyimi yalnızca egzersiz göstermekten ibaret değil. Sena hoca,
+            Femin House'ta eğitmen deneyimi yalnızca egzersiz göstermekten ibaret değil. Sena hoca,
             fizyoterapist bakışıyla duruşu, ağrıyı ve hareket kalitesini değerlendirir; seansı
             bedenin o günkü ihtiyacına göre şekillendirir.
           </p>
@@ -365,7 +365,7 @@ export function AboutSection() {
             Beylikdüzü Centro'da sakin, kontrollü ve klinik temelli bir stüdyo.
           </SectionTitle>
           <p className="mt-6 max-w-2xl text-base leading-8 text-[oklch(0.39_0.04_35)] sm:text-lg">
-            Fem'n House, fizyoterapi danışmanlığı ile pilatesi aynı çatı altında buluşturur. Amaç
+            Femin House, fizyoterapi danışmanlığı ile pilatesi aynı çatı altında buluşturur. Amaç
             sadece egzersiz değil; ağrıyı, duruşu, nefesi ve hareket alışkanlıklarını birlikte ele
             alan sürdürülebilir bir iyilik hali kurmaktır.
           </p>
@@ -391,7 +391,7 @@ export function AboutSection() {
         <div className="relative">
           <img
             src={heroPilatesImg}
-            alt="Fem'n House reformer pilates stüdyosu"
+            alt="Femin House reformer pilates stüdyosu"
             width={1600}
             height={900}
             loading="lazy"
@@ -576,7 +576,7 @@ export function GallerySection() {
             target="_blank"
             rel="noopener noreferrer"
             className="group col-span-2 flex min-h-[240px] flex-col justify-between overflow-hidden rounded-lg border border-[var(--terracotta)]/14 bg-[oklch(0.94_0.026_62)] p-5 transition-transform duration-300 hover:-translate-y-1 sm:min-h-[260px] md:col-span-1 md:aspect-square md:min-h-0 lg:p-6"
-            aria-label="Fem'n House Instagram hesabını aç"
+            aria-label="Femin House Instagram hesabını aç"
           >
             <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[var(--terracotta)] text-white">
               <Instagram className="h-5 w-5" />
@@ -715,6 +715,7 @@ function ContactItem({
 export function Footer() {
   return (
     <footer className="border-t border-[var(--terracotta)]/12 bg-[oklch(0.98_0.016_78)] px-6 py-8 text-center">
+      {/* Aşağıdaki logo kısmındaki tasarımsal stile DOKUNULMADI (Fem'n House) */}
       <p
         className="text-2xl tracking-[0.28em] text-[oklch(0.35_0.05_35)]"
         style={{ fontFamily: "'Italiana', serif" }}
@@ -726,7 +727,8 @@ export function Footer() {
       </p>
       <div className="mx-auto mt-8 grid max-w-5xl gap-6 border-t border-[var(--terracotta)]/12 pt-6 text-sm leading-7 text-[oklch(0.38_0.04_35)] md:grid-cols-3 md:text-left">
         <div>
-          <p className="font-semibold text-[oklch(0.3_0.05_35)]">Fem'n House</p>
+          {/* Buradaki resmi işletme adı alanı Femin House olarak güncellendi */}
+          <p className="font-semibold text-[oklch(0.3_0.05_35)]">Femin House</p>
           <p className="mt-2">{seoBusiness.addressText}</p>
         </div>
         <div>
