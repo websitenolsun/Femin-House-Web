@@ -7,12 +7,14 @@ export const Hero = () => {
   return (
     <section className="relative min-h-[94svh] w-full overflow-hidden bg-[oklch(0.96_0.02_75)]">
       <div className="absolute inset-0 lg:hidden">
-        <img
-          src="/optimized/hero-pilates.webp"
-          alt=""
-          width={1600}
-          height={900}
-          decoding="async"
+        <video
+          src="/hero-pilates.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          poster="/optimized/hero-pilates.webp"
           className="h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[oklch(0.2_0.04_35)]/65 via-[oklch(0.27_0.05_35)]/45 to-[oklch(0.16_0.04_35)]/75" />

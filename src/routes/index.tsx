@@ -575,7 +575,7 @@ export function GallerySection() {
             href="https://www.instagram.com/feminhouse/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex aspect-square flex-col justify-between overflow-hidden rounded-lg border border-[var(--terracotta)]/14 bg-[oklch(0.94_0.026_62)] p-5 transition-transform duration-300 hover:-translate-y-1"
+            className="group col-span-2 flex min-h-[240px] flex-col justify-between overflow-hidden rounded-lg border border-[var(--terracotta)]/14 bg-[oklch(0.94_0.026_62)] p-5 transition-transform duration-300 hover:-translate-y-1 sm:min-h-[260px] md:col-span-1 md:aspect-square md:min-h-0 lg:p-6"
             aria-label="Fem'n House Instagram hesabını aç"
           >
             <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[var(--terracotta)] text-white">
@@ -586,7 +586,7 @@ export function GallerySection() {
                 @FEMINHOUSE
               </span>
               <span
-                className="mt-3 block text-3xl leading-tight text-[oklch(0.28_0.045_35)]"
+                className="mt-3 block text-[2rem] leading-[1.05] text-[oklch(0.28_0.045_35)] sm:text-4xl md:text-2xl lg:text-3xl"
                 style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}
               >
                 Devamı Instagram'da :)
