@@ -8,7 +8,7 @@ Fem'n House
 
 ## Site URL
 
-https://www.femnhouse.com
+https://www.feminhouse.com
 
 ## Uzman
 
