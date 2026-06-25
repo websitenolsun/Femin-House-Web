@@ -1,4 +1,4 @@
-export const siteUrl = "https://www.femnhouse.com";
+export const siteUrl = "https://www.feminhouse.com";
 
 export const seoBusiness = {
   name: "Fem'n House",
