@@ -14,7 +14,7 @@ export const Hero = () => {
           muted
           playsInline
           preload="metadata"
-          poster="/optimized/hero-pilates.webp"
+          poster="/optimized/hero-video-kapak.webp"
           className="h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[oklch(0.2_0.04_35)]/65 via-[oklch(0.27_0.05_35)]/45 to-[oklch(0.16_0.04_35)]/75" />
